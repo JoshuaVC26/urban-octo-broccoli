@@ -52,6 +52,8 @@ button:hover{
     font-weight: bold;
     color: black;
     font-size: 1.6em;
+    animation: heartBeat;
+  animation-duration: 2s; 
  }
  
 
@@ -100,6 +102,8 @@ header a:hover{
 
 #hero h1{
     color: white;
+    animation: rubberBand;
+  animation-duration: 2s; 
 }
 
 #hero button{
@@ -112,11 +116,22 @@ header a:hover{
     padding: 200px 12px;
 }
 
+#somosMunprogra h2{
+    animation: bounceInRight;
+  animation-duration: 2s;
+}
+
+#somosMunprogra p{
+    animation: bounceInLeft;
+  animation-duration: 2s;
+}
+
 #UnpocodeNosotros{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
+
 
 #UnpocodeNosotros .container1{
     padding: 150px 12px;
@@ -125,10 +140,20 @@ header a:hover{
 #UnpocodeNosotros h2{
     margin-top: 0;
     font-size: 3.2em;
+    animation: backInUp;
+  animation-duration: 2s;
+}
+
+#UnpocodeNosotros h3{
+  animation: fadeInBottomLeft;
+  animation-duration: 2s;
+  padding-bottom: 20px;
 }
 
 #UnpocodeNosotros p{
     display: none;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
 }
 
 #UnpocodeNosotros .carta{
@@ -172,10 +197,14 @@ header a:hover{
     padding: 250px 12px;
 }
 
+#Caracteristicas ul{
+    animation: flipInX;
+    animation-duration: 2s;
+}
+
 #Caracteristica li{
     margin: 16px 0px;
     font-weight: bold;
-
 }
 
 #Final{
@@ -191,6 +220,8 @@ header a:hover{
 
 #Final h2{
     font-size: 9vw;
+    animation: flip;
+    animation-duration: 2s;
 }
 
 #Final button{
