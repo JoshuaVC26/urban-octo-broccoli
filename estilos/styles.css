@@ -42,12 +42,13 @@ button:hover{
    .color-acento{ color:blueviolet; }
 
    header{
-       background-color:#AF40FF;
+       background-color:blueviolet;
+       border: 5px solid black;
    }
 
  header .logo{
     margin: 0;
-    padding: 25px 30px;
+    padding: 25px 10px;
     font-weight: bold;
     color: black;
     font-size: 1.6em;
