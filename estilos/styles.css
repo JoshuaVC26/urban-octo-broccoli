@@ -3,7 +3,9 @@
 }
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,52 +19,20 @@ p{ font-size:1.25em;}
 ul{ list-style: none;}
 
 
-button {
-    align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    border: 0;
-    border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    display: flex;
-    font-family: Phantomsans, sans-serif;
-    font-size: 18px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all .3s;
-   }
-   
-   button:active,
-   button:hover {
-    outline: 0;
-   }
-   
-   button span {
-    background-color: rgb(5, 6, 45);
-    padding: 16px 24px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    transition: 300ms;
-   }
-   
-   button:hover span {
-    background: none;
-   }
-   
-   button:active {
-    transform: scale(0.9);
-   }
+button{
+    font-size:1.25em; 
+    font-weight:bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white; 
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color:rgba(101,33,165);
+}
 
    .container1{
        max-width: 1400px;
@@ -79,7 +49,7 @@ button {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: blueviolet;
+    color: black;
     font-size: 1.6em;
  }
  
@@ -131,6 +101,10 @@ header a:hover{
     color: white;
 }
 
+#hero button{
+    font-size:1.75em;
+}
+
 
 #somosMunprogra .container1{
     text-align: center;
@@ -149,12 +123,20 @@ header a:hover{
 
 #UnpocodeNosotros h2{
     margin-top: 0;
+    font-size: 3.2em;
 }
 
 #UnpocodeNosotros p{
     display: none;
 }
 
+#UnpocodeNosotros .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px ;
+    margin: 20px;
+    border-radius: 15px;
+}
 
 .carta:first-child{
     background-image: linear-gradient(
@@ -163,8 +145,6 @@ header a:hover{
         rgba(0,0,0,0.5)
     )
     ,url(../img/web-1935737_640.png);
-    background-position: center center;
-    background-size: cover;
 }
 
 .carta:nth-child(2){
@@ -174,8 +154,6 @@ header a:hover{
         rgba(0,0,0,0.5)
     )
     ,url(../img/programmer-1653351_640.png);
-    background-position: center center;
-    background-size: cover;
 }
 
 .carta:nth-child(3){
@@ -185,6 +163,176 @@ header a:hover{
         rgba(0,0,0,0.5)
     )
     ,url(../img/Hacker\ azul.png);
-    background-position: center center;
-    background-size: cover;
+}
+
+
+#Caracteristicas .container1{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#Caracteristica li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+}
+
+#Final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#Final h2{
+    font-size: 9vw;
+}
+
+#Final button{
+    font-size: 5vw;
+}
+
+footer .copyRight{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+@media(min-width: 720px){
+
+    header{
+    position: fixed;
+    width: 100%;
+    }
+
+    header .container1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size:5em;
+    }
+
+    #somosMunprogra .container1{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    
+
+    #somosMunprogra .imgin{
+        background-image: url(../img//dual-screen-1745705_640.png);
+        background-size:cover;
+        background-position:center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #somosMunprogra .Texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somosMunprogra h2{
+        margin-top:0px;
+    }
+
+    #UnpocodeNosotros .espeCi{
+        display: flex;
+        justify-content:center;
+    }
+
+    #UnpocodeNosotros p{
+        display:block;
+        margin-bottom:30px;
+    }
+
+    #UnpocodeNosotros h3{
+        margin-top:0;
+    }
+
+    #UnpocodeNosotros .carta{
+        padding-top: 70px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50,50,50,1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/web-1935737_640.png);
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/programmer-1653351_640.png);
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/Hacker\ azul.png);
+    }
+
+    #Caracteristicas{
+        background-image:url(../img/Logo.png);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 120px
+    }
+
+    #Caracteristicas .container1{
+        text-align:initial;
+    }
+
+    #Caracteristicas ul{
+        margin-left: 100px;
+    }
+
+
+    #Final h2{
+        font-size: 5em;
+        padding: 50px;
+    }
+
+    #Final button{
+        font-size: 2em;
+    }
+
+}
+
+@media (min-width: 1200px){
+    #Caracteristicas{
+        background-position-x:calc(100vw - 800px);
+    }
 }
