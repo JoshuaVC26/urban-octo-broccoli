@@ -276,6 +276,40 @@ form #basic{
     font-size:21px;
 }
 
+.sobreNoso{
+    background-color:black;
+}
+
+#tituHis{
+    padding:80px 30px;
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    align-items: center;
+    color:rgb(4, 248, 4);
+    border:3px solid black;
+    border-radius:5px;
+}
+
+#tituHis h1{
+    animation:backInRight;
+    animation-duration: 2s;
+}
+
+.texHis{
+    padding:20px 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.texHis p{
+    color: chartreuse;
+    font-weight: bold;
+    font-size:2em;
+    animation:flipInX;
+    animation-duration: 2s;
+}
+
 @media(min-width: 720px){
 
     header{
